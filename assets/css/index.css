@@ -61,6 +61,7 @@
   width: 1320px;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .inner .box {
@@ -211,4 +212,26 @@ section.journal .inner .box ul li p {
 
 section.journal .inner .box .moreBtn {
   margin-left: 22%;
+}
+
+/* service */
+section.service {
+  padding: 190px 0;
+}
+
+section.service .inner .box .img {
+  margin-top: 60px;
+}
+
+section.service .inner .box.design {
+  flex-basis: 45%;
+  margin-top: -40%;
+  padding-top: 60px;
+  border-top: 1px solid #c4e5ea;
+}
+
+section.service .inner .box.design .tit {
+  font-size: 40px;
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
