@@ -235,3 +235,24 @@ section.service .inner .box.design .tit {
   line-height: 1.4;
   margin-bottom: 20px;
 }
+
+/* customer */
+section.customer {
+  padding: 160px;
+  text-align: center;
+  background: url(/assets/img/img_04.jpg) no-repeat center/cover;
+}
+
+section.customer .tit {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+section.customer .tit span {
+  margin-bottom: 10px;
+}
+
+section.customer .txt {
+  color: #8d8d8d;
+}
