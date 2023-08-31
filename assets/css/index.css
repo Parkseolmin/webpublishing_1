@@ -1,5 +1,61 @@
 @charset "utf-8";
 
+/* 타이틀, 텍스트, 더보기 버튼 공통 클래스 */
+.tit {
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.tit span {
+  display: block;
+}
+
+.tit span b {
+  font-weight: normal;
+}
+
+.tit span.en_s {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.txt p {
+  color: #888;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.txt p b {
+  font-weight: normal;
+}
+
+.moreBtn {
+  display: inline-block;
+  color: #333;
+  position: relative;
+  padding-left: 45px;
+  margin-top: 20px;
+  transform: skewX(-15deg) translateX(5px);
+  transition: all 0.15s;
+}
+
+.moreBtn::before {
+  content: '';
+  width: 42px;
+  height: 1px;
+  background: #333;
+  position: absolute;
+  left: 0;
+  top: 54%;
+}
+
+.moreBtn:hover,
+.moreBtn:focus {
+  transform: skewX(0deg) translateX(0px);
+  font-weight: bold;
+}
+
 /* header */
 .innerHeader {
   max-width: 1720px;
@@ -48,4 +104,40 @@ span.bar {
   height: 3px;
   background: #e7e7e7;
   transition: all 0.4s;
+}
+
+/* visual */
+section.visual {
+  max-width: 1720px;
+  margin: auto;
+  display: flex;
+}
+
+section.visual .mainImg {
+  flex-basis: 50%;
+}
+
+section.visual .mainImg img {
+  width: 90%;
+}
+
+section.visual .mainTxt {
+  flex-basis: 50%;
+  margin-top: 180px;
+}
+
+section.visual .mainTxt .tit {
+  font-size: 72px;
+}
+
+section.visual .mainTxt .tit span.en_s {
+  margin-bottom: 10px;
+}
+
+section.visual .mainTxt .tit .gray {
+  color: #ccc;
+}
+
+section.visual .mainTxt .txt {
+  padding: 50px 0 0 70px;
 }
