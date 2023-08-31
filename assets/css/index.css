@@ -279,3 +279,101 @@ section.team .box .img {
 section.team .box .txt {
   margin: 30px 0;
 }
+
+/* footer */
+footer {
+  width: 1320px;
+  margin: auto;
+}
+
+footer .top .tit {
+  color: #e6e6e6;
+  font-size: 62px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+footer .bottom {
+  border-top: 1px solid #e6e6e6;
+  padding: 40px 0 100px;
+}
+
+footer .bottom ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer .bottom ul li {
+  padding: 0 40px;
+  width: 23%;
+  font-size: 12px;
+  line-height: 2;
+}
+
+footer .bottom ul li:nth-child(1) {
+  width: 31%;
+  font-size: 28px;
+  color: #000;
+  line-height: 1.1;
+}
+
+footer .bottom ul li b {
+  color: #333;
+  font-weight: bold;
+}
+
+footer .bottom ul li b:nth-child(1) {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* SVG 애니메이션 */
+.circleBox {
+  display: block;
+  transform: rotate(-90deg);
+}
+
+.circleBox .svgAni path {
+  fill: none;
+  stroke: #f5f5f5;
+  stroke-width: 25;
+  /* path의 총길이 */
+  stroke-dasharray: 1564;
+  /* 스트록 애니메이션 시작 지점 */
+  stroke-dashoffset: 0;
+}
+
+section.journal .circleBox {
+  position: absolute;
+  width: 700px;
+  z-index: -1;
+  right: 13%;
+  top: 100px;
+}
+
+section.team .circleBox {
+  width: 700px;
+  position: absolute;
+  top: -50px;
+  left: 20%;
+  z-index: -1;
+}
+
+/* SVG 애니메이션 */
+.circleBox.motion .svgAni path {
+  animation-name: dash;
+  animation-duration: 1.5s;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1564;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

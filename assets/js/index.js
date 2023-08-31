@@ -9,3 +9,21 @@ $(function () {
     $('span.bar').css({ left: 0, width: 0, opacity: 0 });
   });
 });
+
+// 2. circleBox의 SVG길이 구하기
+$(function () {
+  $('.svgAni')
+    .find('path')
+    .each(function (i, path) {
+      const length = path.getTotalLength();
+      // alert(length);
+    });
+});
+
+// 3. scrolla - 스크롤애니메이션 설정
+$(function () {
+  $('.animate').scrolla({
+    mobile: true, // 모바일버전 시 활성화
+    once: false, // 계속 반복
+  });
+});
