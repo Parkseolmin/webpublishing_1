@@ -24,6 +24,22 @@ $(function () {
 $(function () {
   $('.animate').scrolla({
     mobile: true, // 모바일버전 시 활성화
-    once: false, // 계속 반복
+    once: true, // 계속 반복
   });
+});
+
+// 4. 배경색 변경
+$(window).on('scroll resize', function () {
+  const scrollTop = $(document).scrollTop();
+  bgColor();
+  function bgColor() {
+    if (scrollTop > 1400) {
+      $('body').addClass('on');
+    } else {
+      $('body').removeClass('on');
+    }
+    if (scrollTop > 2700) {
+      $('body').removeClass('on');
+    }
+  }
 });
