@@ -56,6 +56,17 @@
   font-weight: bold;
 }
 
+/* section > inner 공통 요소 */
+.inner {
+  width: 1320px;
+  margin: auto;
+  display: flex;
+}
+
+.inner .box {
+  flex-basis: 50%;
+}
+
 /* header */
 .innerHeader {
   max-width: 1720px;
@@ -140,4 +151,64 @@ section.visual .mainTxt .tit .gray {
 
 section.visual .mainTxt .txt {
   padding: 50px 0 0 70px;
+}
+
+/* journal */
+section.journal {
+  position: relative;
+  padding: 190px 0 0 120px;
+}
+
+section.journal .scroll {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  font-size: 10px;
+  letter-spacing: 5px;
+  writing-mode: vertical-rl;
+  padding-top: 90px;
+}
+
+section.journal .scroll::before {
+  content: '';
+  position: absolute;
+  height: 75px;
+  width: 1px;
+  background: #333;
+  top: 0;
+  left: 6px;
+}
+
+section.journal .inner .box .img {
+  padding-top: 100px;
+}
+
+section.journal .inner .box .tit {
+  margin-bottom: 40px;
+}
+
+section.journal .inner .box ul {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 40px;
+}
+
+section.journal .inner .box ul li {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+section.journal .inner .box ul li h3 {
+  flex-basis: 22%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+section.journal .inner .box ul li p {
+  flex-basis: 78%;
+  color: #888;
+}
+
+section.journal .inner .box .moreBtn {
+  margin-left: 22%;
 }
