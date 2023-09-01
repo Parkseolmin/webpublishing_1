@@ -43,3 +43,13 @@ $(window).on('scroll resize', function () {
     }
   }
 });
+
+// 5. 햄버거 메뉴
+$(function () {
+  $('.menuOpen button.open').on('click', function () {
+    $('.menuOpen .menuWrap').addClass('on');
+  });
+  $('.menuOpen .menuWrap .close').on('click', function () {
+    $('.menuOpen .menuWrap').removeClass('on');
+  });
+});
