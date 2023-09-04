@@ -127,7 +127,7 @@ section.visual {
 }
 
 section.visual .mainImg {
-  flex-basis: 50%;
+  width: 50%;
 }
 
 section.visual .mainImg img {
@@ -135,7 +135,7 @@ section.visual .mainImg img {
 }
 
 section.visual .mainTxt {
-  flex-basis: 50%;
+  width: 50%;
   margin-top: 180px;
 }
 
@@ -227,7 +227,7 @@ section.service .inner .box .img {
 }
 
 section.service .inner .box.design {
-  flex-basis: 45%;
+  width: 45%;
   margin-top: -40%;
   padding-top: 60px;
   border-top: 1px solid #c4e5ea;
@@ -611,5 +611,389 @@ section.service .img.motion::after {
   40% {
     opacity: 0;
     transform: translateY(-50%) scale(0.5);
+  }
+}
+
+/* 반응형 웹 제작 */
+/* PC (1720px ~ 1401px)*/
+@media screen and (max-width: 1720px) {
+  .innerHeader {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  .innerHeader .mainMenu .sns {
+    margin-left: 200px;
+  }
+  section.visual {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  section.visual .mainTxt {
+    margin-top: 150px;
+  }
+  section.visual .mainTxt .tit {
+    font-size: 62px;
+  }
+}
+
+/* 테블릿(1024px ~ 1400px) */
+@media screen and (max-width: 1400px) {
+  section.visual .mainTxt {
+    margin-top: 100px;
+  }
+  section.visual .mainTxt .tit {
+    font-size: 46px;
+  }
+  section.visual .mainTxt .txt {
+    padding: 20px 0 0;
+    font-size: 0.7rem;
+  }
+  section .inner {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .img img {
+    width: 100%;
+  }
+  section.journal .scroll {
+    display: none;
+  }
+  section.journal .circleBox {
+    right: -10%;
+    top: 0;
+  }
+  section.journal .inner .box .img {
+    width: 90%;
+  }
+  section.customer {
+    padding: 160px 0;
+  }
+  section.customer .txt {
+    font-size: 1rem;
+  }
+  footer {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+
+/* 1024 이하 테블릿(768px ~ 1024px) */
+@media screen and (max-width: 1000px) {
+  .innerHeader {
+    height: 80px;
+    line-height: 80px;
+  }
+  .innerHeader .mainMenu {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: none;
+  }
+  .menuOpen button.open {
+    position: absolute;
+    top: 0;
+    transform: none;
+    width: 70px;
+    height: 80px;
+    padding: 0;
+    line-height: 80px;
+  }
+  .menuOpen button.open::before {
+    display: none;
+  }
+
+  section.visual {
+    flex-direction: column;
+  }
+  section.visual .mainImg {
+    width: 100%;
+  }
+  section.visual .mainImg img {
+    width: 100%;
+  }
+  section.visual .mainTxt {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .inner {
+    flex-direction: column;
+  }
+  .inner .box {
+    width: 100%;
+  }
+  section.journal {
+    padding: 80px 0;
+  }
+  section.journal .circleBox {
+    top: 200px;
+  }
+  section.journal .inner .box .img {
+    margin: 0 auto 50px;
+    padding-top: 0;
+    width: 80%;
+  }
+  section.service {
+    padding: 80px 0;
+  }
+  section.service .txt {
+    margin-top: 20px;
+  }
+  section.service .inner .box.design {
+    margin-top: 50px;
+    width: 100%;
+  }
+  section.service .inner .box .img {
+    margin: 50px auto 0;
+    /* width: 90%; */
+  }
+  section.service .inner .box .img {
+    width: 70%;
+  }
+
+  section.service .inner .box.design .img {
+    width: 70%;
+    margin: 50px 0 0;
+  }
+  section.service .img.motion::after {
+    background: #fff;
+  }
+  section.service .inner .box.design .tit {
+    font-size: 35px;
+  }
+  section.customer {
+    padding: 120px 24px;
+  }
+  section.customer .tit {
+    font-size: 30px;
+  }
+  section.team {
+    padding: 80px 0;
+    overflow: hidden;
+  }
+  section.team .circleBox {
+    left: 15%;
+  }
+  section.team .box.left {
+    padding-right: 0;
+    overflow: hidden;
+  }
+  section.team .inner .box .img {
+    margin-top: 50px;
+    width: 70%;
+    float: right;
+    clear: both;
+  }
+  section.team .inner .box:nth-child(2) .img {
+    width: 100%;
+    margin: 50px 0;
+  }
+  section.team .inner .box .tit {
+    margin-top: 0;
+    clear: both;
+  }
+  section.team .box.left .moreBtn {
+    float: right;
+    margin-right: 5px;
+  }
+  footer .bottom ul {
+    flex-wrap: wrap;
+  }
+  footer .bottom ul li:nth-child(1) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer .bottom ul li {
+    width: 33.3333%;
+  }
+}
+
+/* 모바일 해상도 320px */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+  .innerHeader {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+  }
+  .innerHeader .logo img {
+    margin: 10px 0 10px 5px;
+    width: 70%;
+  }
+  .menuOpen button.open {
+    height: 60px;
+    line-height: 60px;
+    width: 52px;
+  }
+  .menuOpen button.open img {
+    height: 38px;
+  }
+  .menuOpen .menuWrap .tit {
+    font-size: 35px;
+    left: 20px;
+  }
+  .menuOpen .menuWrap .close:nth-child(1) {
+    top: 20px;
+    left: 20px;
+    transform: none;
+  }
+  .menuOpen .menuWrap .close.en {
+    display: none;
+  }
+  .menuOpen .menuWrap.on::before {
+    left: 20%;
+  }
+  section.visual {
+    padding: 0 20px;
+  }
+  .tit {
+    font-size: 30px;
+  }
+  section.visual .mainTxt .tit {
+    font-size: 31px;
+  }
+  .tit span.en_s {
+    font-size: 18px;
+  }
+  .txt {
+    text-align: justify;
+  }
+  .moreBtn {
+    font-size: 12px;
+  }
+  section .inner {
+    padding: 0 20px;
+  }
+  section.journal {
+    padding: 50px 0;
+  }
+  section.journal .circleBox {
+    top: 15%;
+    right: -3%;
+  }
+  section.journal .inner .box .img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  section.journal .inner .box .tit {
+    margin-bottom: 20px;
+  }
+  section.journal .inner .box ul {
+    padding-top: 20px;
+  }
+  section.journal .inner .box ul li {
+    flex-direction: column;
+  }
+  section.journal .inner .box ul li h3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.journal .inner .box ul li p {
+    width: 100%;
+    font-size: 12px;
+  }
+  section.journal .inner .box ul li {
+    margin-bottom: 20px;
+  }
+  section.journal .inner .box .moreBtn {
+    margin-left: 0;
+  }
+  section.service {
+    padding: 50px 0;
+  }
+  section.service .inner .box .img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  section.service .inner .box.design .img {
+    width: 100%;
+  }
+  section.service .inner .box .img.motion::after {
+    background: #e8fcff;
+  }
+  section.service .inner .box.design {
+    padding-top: 50px;
+  }
+  section.service .inner .box.design .tit {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  section.customer {
+    padding: 80px 20px;
+  }
+  section.customer .tit {
+    font-size: 25px;
+  }
+  section.customer .txt {
+    text-align: center;
+  }
+  section.team {
+    padding: 50px 0;
+  }
+  section.team .circleBox {
+    left: 4%;
+  }
+  section.team .box .txt {
+    margin: 30px 0 10px;
+  }
+  section.team .inner .box .img {
+    margin-top: 30px;
+  }
+  section.team .inner .box:nth-child(2) .img {
+    margin: 30px 0;
+  }
+  footer {
+    padding: 0 20px;
+  }
+  footer .top .tit {
+    font-size: 31px;
+    padding-bottom: 30px;
+  }
+  footer .bottom ul li {
+    padding: 0 15px;
+  }
+  footer .bottom ul li:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  footer .bottom ul li {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  footer .bottom ul li b:nth-child(1) {
+    font-size: 13px;
+  }
+  footer .bottom {
+    padding: 40px 0 50px;
+  }
+}
+
+/* 320모바일 */
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+  section.visual .mainTxt .tit span.en_s {
+    font-size: 16px;
+  }
+  section.visual .mainTxt .tit,
+  .tit,
+  footer .top .tit {
+    font-size: 27px;
+  }
+  .menuOpen .menuWrap .tit {
+    font-size: 27px;
+  }
+  section.journal .inner .box ul li h3 {
+    font-size: 14px;
+  }
+
+  section.service .inner .box.design .tit {
+    font-size: 22px;
+  }
+
+  .moreBtn {
+    font-size: 11px;
   }
 }
