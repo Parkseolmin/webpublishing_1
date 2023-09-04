@@ -5,6 +5,7 @@
 미리보기 :
 
 ## 사이트 둘러보기
+![image](https://github.com/Parkseolmin/webpublishing_1/assets/76764414/0fbda44d-1863-4704-bffa-fe702290e853)
 
 
 ## 사용 스택
